@@ -54,7 +54,7 @@ public	void addtest() {
 		
 	}
 	@Test
-	 public  void counttest2() {
+	 public  void count2test() {
 		cridit.create();
 		cridit.addbook(20, "h1");
 		
@@ -63,7 +63,7 @@ public	void addtest() {
 	}
 	@Test
 	
-public	void prisetest1() {
+public	void prise1test() {
 		cridit.create();
 		cridit.addbook(20, "h1");
 		
@@ -71,7 +71,7 @@ public	void prisetest1() {
 		
 	}
 	
-	 public void addtest2() {
+	 public void add2test() {
 		cridit.create();
 		cridit.addbook(20, "h1");
 		
@@ -90,7 +90,7 @@ public	void prisetest1() {
 	assertEquals(temp.get(1).cost,book1.get(1).cost );
 	assertEquals(temp.get(1).name,book1.get(1).name );}
 	@Test
- public	void counttest3() {
+ public	void count3test() {
 		
 		cridit.create();
 		cridit.addbook(20, "h1");
@@ -99,7 +99,7 @@ public	void prisetest1() {
 		
 	}
 	@Test
-	 public void prisetest2() {
+	 public void prise2test() {
 		
 		
 		cridit.create();
@@ -112,7 +112,7 @@ public	void prisetest1() {
 	
 	@Test
 	
-	 public void addtest3() {
+	 public void add3test() {
 	
 		
 		cridit.create();
@@ -143,7 +143,7 @@ b3.cost=20;
 	}
 	
 	@Test
- public void addtest5() {
+ public void addt5est() {
 		cridit.create();
 		cridit.addbook(20, "h1");
 		cridit.addbook(20, "h2");
@@ -178,7 +178,7 @@ temp .add(b1);
 		assertEquals(temp.get(3).name,book1.get(3).name );	
 	}
 	@Test
-	 public void prisetest5() {
+	 public void prise5test() {
 		cridit.create();
 		cridit.addbook(20, "h1");
 		cridit.addbook(20, "h2");
@@ -189,7 +189,7 @@ temp .add(b1);
 	
 	
 	@Test
- public	void counttest4() {
+ public	void count4test() {
 		cridit.create();
 		cridit.addbook(20, "h1");
 		cridit.addbook(20, "h2");
