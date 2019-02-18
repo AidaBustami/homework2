@@ -3,6 +3,7 @@ package aida.test;
 import static org.junit.Assert.*;
 
 
+
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -12,7 +13,7 @@ import aida.source.book;
 import aida.source.cridit;
 
 
-public class testing {
+public class tester {
 
 
 	

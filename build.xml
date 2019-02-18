@@ -5,8 +5,8 @@
 <property name="sourse" location="./src/aida/source"/>
 	
 <property name="test" location="./src/aida/test"/>
-<property name="classes1" location="./sourceclass"/>
-<property name="classes2" location="./testclass"/>
+<property name="classes1" location="./sourceode"/>
+<property name="classes2" location="./testcode"/>
 	<path id="Libraries">
 	        <pathelement location="./dependiese/junit-4.12.jar"/>
 	      
