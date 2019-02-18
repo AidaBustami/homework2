@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<project >
+
+<property name="sourse" location="./src/aida/source"/>
+	
+<property name="test" location="./src/aida/test"/>
+<property name="classes1" location="./sourceclass"/>
+<property name="classes2" location="./testclass"/>
+	<path id="Libraries">
+	        <pathelement location="./dependiese/junit-4.12.jar"/>
+	      
+	        <pathelement location="./dependiese/hamcrest-core-1.3.jar"/>
+	       <pathelement location="./dependiese/jacocoant.jar"/>
+	    </path>
+<property name="jar1" location="./result.jar"/>
+
+
+<target name="compilesource">
+
+
+
+<javac   srcdir="${sourse}" destdir="${classes1}" includeantruntime="false" debug="true">
+</javac>
+
+
+</target>
+	
+	  <target name="compile-testcases" depends="compilesource">
+	        
+	        <javac srcdir="${test}"  destdir="${classes2}" debug="true" includeantruntime="false">
+	
+	        	 <classpath>
+	        	                
+	        	                <path refid="Libraries"/>
+	        	                <pathelement location="${classes1}"/>
+	        	            </classpath>
+	        	        </javac>        
+	        	    </target>
+		
+
+	<target name="test" depends="compile-testcases">   
+		  <junit printsummary="true" haltonfailure="true" fork="true">
+		            <classpath>
+		                <path refid="Libraries"></path>
+		                <pathelement location="${classes1}"/>
+		                <pathelement location="${classes2}"/>
+		            </classpath>
+		            <formatter type="brief" usefile="false"/>
+		            <batchtest >
+		                <fileset dir="${classes2}" >
+		                     <include name="**/*test.class"/>
+		                </fileset>
+		            </batchtest>
+		            
+		        </junit>
+		    </target>
+		    
+	
+<target name="jar" depends="compile-testcases">
+
+
+<jar destfile="${jar1}">
+
+<fileset dir="${classes2}">
+</fileset>
+
+</jar>
+
+</target>
+
+ </project>
+	
