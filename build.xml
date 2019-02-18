@@ -15,11 +15,12 @@
 	    </path>
 <property name="jar1" location="./result.jar"/>
 
-
+  
+	
 <target name="compilesource">
 
 
-
+	  <mkdir dir=" ${classes1}"/>
 <javac   srcdir="${sourse}" destdir="${classes1}" includeantruntime="false" debug="true">
 </javac>
 
@@ -27,7 +28,7 @@
 </target>
 	
 	  <target name="compile-testcases" depends="compilesource">
-	        
+	     <mkdir dir=" ${classes2}"/>
 	        <javac srcdir="${test}"  destdir="${classes2}" debug="true" includeantruntime="false">
 	
 	        	 <classpath>
