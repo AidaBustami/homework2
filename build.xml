@@ -1,12 +1,16 @@
 <?xml version="1.0"?>
 
 <project >
+<property name="classes1" location="./scode"/>
+<property name="classes2" location="./testcode"/ >
  <plugin>
+	 
    <tasks> 
-	   <mkdir dir="./scode"/>
-      <mkdir dir="./testcode"/ >
-                  </tasks>
-                  </plugin>       
+<mkdir dir="${classes1}"/>
+<mkdir dir="${classes1}"/>
+   
+ </tasks>
+</plugin>       
 <property name="sourse" location="./src/aida/source"/>
 
 <property name="test" location="./src/aida/test"/>
