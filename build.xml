@@ -29,7 +29,7 @@
         
     <target name="compile-testcases" depends="compilesource">
        
-        <javac  srcdir="${test}"  destdir="$classes2}" debug="true" includeantruntime="false">
+        <javac  srcdir="${test}"  destdir="${classes2}" debug="true" includeantruntime="false">
             <classpath>
                 
                 <path refid="Libraries"/>
