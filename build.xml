@@ -2,11 +2,16 @@
 
 <project >
  <plugin>
+   <tasks> 
+	   <mkdir dir="./scode"/>
+      <mkdir dir="./testcode"/ >
+                  </tasks>
+                  </plugin>       
 <property name="sourse" location="./src/aida/source"/>
-	
+
 <property name="test" location="./src/aida/test"/>
 <property name="classes1" location="./scode"/>
-<property name="classes2" location="./testcode"/>
+<property name="classes2" location="./testcode"/ >
 	<path id="Libraries">
 	        <pathelement location="./dependiese/junit-4.12.jar"/>
 	      
@@ -21,10 +26,7 @@
 
 
 	  
-	   <tasks> 
-		   <mkdir dir="${classes1}"/
-                            
-                        </tasks>
+	 
 <javac   srcdir="${sourse}" destdir="${classes1}" includeantruntime="false" debug="true">
 </javac>
 
@@ -32,9 +34,9 @@
 </target>
 	
 	  <target name="compile-testcases" depends="compilesource">
-	     <tasks> 
-                    <mkdir dir="${classes2}"/
-			      </tasks> 
+	   
+                  
+			  
 	        <javac srcdir="${test}"  destdir="${classes2}" debug="true" includeantruntime="false">
 	
 	        	 <classpath>
@@ -75,6 +77,5 @@
 </jar>
 
 </target>
- </plugin>
  </project>
 	
