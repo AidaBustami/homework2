@@ -2,20 +2,19 @@
 
 <project >
 <property name="classes1" location="./scode"/>
-<property name="classes2" location="./testcode"/ >
+<property name="classes2" location="./testcode"/>
  <plugin>
 	 
    <tasks> 
 <mkdir dir="${classes1}"/>
-<mkdir dir="${classes1}"/>
+<mkdir dir="${classes2}"/>
    
  </tasks>
 </plugin>       
 <property name="sourse" location="./src/aida/source"/>
 
 <property name="test" location="./src/aida/test"/>
-<property name="classes1" location="./scode"/>
-<property name="classes2" location="./testcode"/ >
+
 		
 <property name="jar1" location="./result.jar"/>
 	
