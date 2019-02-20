@@ -13,7 +13,7 @@
 <property name="test" location="./src/aida/test"/>
 
 		
-<property name="jar1" location="./result.jar"/>
+<property name="jar1" location="./result.txt"/>
 	
 <path id="Libraries">
         <pathelement location="./dependiese/junit-4.12.jar"/>
