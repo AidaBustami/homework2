@@ -142,7 +142,17 @@ b3.cost=20;
 	assertEquals(temp.get(2).name,book1.get(2).name );
 		
 	}
-	
+	@Test
+	 public void prise7test() {
+		
+		
+		cridit.create();
+		cridit.addbook(20, "h1");
+		cridit.addbook(20, "h2");
+		cridit.addbook(20, "h2");
+		assertEquals(60,cridit.sumofprice3());
+		
+	}
 	@Test
  public void addt5est() {
 		cridit.create();
