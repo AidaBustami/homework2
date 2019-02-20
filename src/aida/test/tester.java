@@ -71,7 +71,7 @@ public	void prise1test() {
 		assertEquals(20,cridit.sumofprice1());
 		
 	}
-	
+	@Test
 	 public void add2test() {
 		cridit.create();
 		cridit.addbook(20, "h1");
