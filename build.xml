@@ -40,7 +40,7 @@
     
     <target name="test" depends="compile-testcases">
         <!--fork : each test will run in its own JVM (to seperate test cases)-->
-        <junit printsummary="true" haltonfailure="true" fork="true">
+        <junit printsummary="true" haltonfailure="false" >
             <classpath>
                 <path refid="Libraries"></path>
                 <pathelement location="${classes1}"/>
@@ -49,7 +49,7 @@
             <formatter type="brief" usefile="false"/>
             <batchtest >
                 <fileset dir="${classes2}" >
-                     <include name="**/*test.class"/>
+                  
                 </fileset>
             </batchtest>
             
