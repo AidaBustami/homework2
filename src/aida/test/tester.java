@@ -187,6 +187,8 @@ temp .add(b1);
 		assertEquals(temp.get(2).name,book1.get(2).name );
 		assertEquals(temp.get(3).cost,book1.get(3).cost );
 		assertEquals(temp.get(3).name,book1.get(3).name );	
+	 assertEquals(temp.get(4).cost,book1.get(4).cost );
+		assertEquals(temp.get(4).name,book1.get(4).name );
 	}
 	@Test
 	 public void prise5test() {
